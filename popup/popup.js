@@ -12,7 +12,8 @@ taskManager.taskInput.addEventListener('keydown', function (event) {
 taskManager.taskList.addEventListener('change', function (event) {
   if (event.target.type === 'checkbox') {
     //using id to find the task
-    const task = taskManager.findTask(event.target.parentElement.parentElement.id);
+    console.log(event.target.parentElement.id)
+    const task = taskManager.findTask(event.target.parentElement.id);
     taskManager.updateTask(task, task.text, event.target.checked);
   }
 });
