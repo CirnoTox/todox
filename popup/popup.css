@@ -1,0 +1,12 @@
+ul {
+  list-style-type: none;
+}
+
+/* Use the following code to make the checkbox check area smaller */
+ul input[type="checkbox"] {
+  transform: scale(0.8);
+}
+
+.checkbox-label {
+  user-select: text;
+}
